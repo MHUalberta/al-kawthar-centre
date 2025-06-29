@@ -2170,6 +2170,39 @@ ul.icons li:last-child {
 }
 
 /* Section/Article */
+#registration-announcement {
+  background: #fffbe6;
+  border: 2px solid #f7b500;
+  border-radius: 8px;
+  margin: 2em auto 1.5em auto;
+  max-width: 80%;
+  padding: 1.5em;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(247, 181, 0, 0.08);
+}
+#registration-announcement h3 {
+  color: #2d2d2d;
+  margin-bottom: 0.5em;
+}
+#registration-announcement p {
+  margin-bottom: 0.5em;
+}
+#registration-announcement p:first-of-type {
+  font-weight: bold;
+  color: #b85c00;
+}
+#registration-announcement p a {
+  color: #005fa3;
+  text-decoration: underline;
+}
+#registration-announcement p:last-child {
+  margin-bottom: 0;
+}
+#registration-announcement + section#intro {
+  border-top: none;
+  padding-top: 2em;
+}
+
 section.special, article.special {
   text-align: center;
 }
@@ -2715,7 +2748,7 @@ body.is-preload #header.alt .logo {
     display: none;
   }
   #nav + #main {
-    padding-top: 0;
+    padding-top: 1em;
   }
 }
 

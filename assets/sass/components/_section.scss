@@ -6,6 +6,42 @@
 
 /* Section/Article */
 
+	#registration-announcement {
+		background: #fffbe6; // very light yellow for high contrast
+		border: 2px solid #f7b500; // strong gold
+		border-radius: 8px;
+		margin: 2em auto 1.5em auto;
+		max-width: 80%;
+		padding: 1.5em;
+		text-align: center;
+		box-shadow: 0 2px 8px rgba(247,181,0,0.08);
+
+		h3 {
+			color: #2d2d2d; // dark gray for strong contrast
+			margin-bottom: 0.5em;
+		}
+		p {
+			margin-bottom: 0.5em;
+			&:first-of-type {
+				font-weight: bold;
+				color: #b85c00; // dark orange for contrast
+			}
+			a {
+				color: #005fa3; // accessible blue
+				text-decoration: underline;
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		// Remove border-top and reduce padding-top from intro section if there is an announcement
+		& + section#intro {
+			border-top: none;
+			padding-top: 2em;
+		}
+	}
+
 	section, article {
 		&.special {
 			text-align: center;
